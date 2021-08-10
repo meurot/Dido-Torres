@@ -1,0 +1,385 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* HOME */
+
+.grid-container {
+  display: grid;
+  background-color: rgb(0, 0, 0);
+  grid-template-areas:
+    "header header header"
+    "aside home-picture home-picture"
+    "aside home-picture home-picture"
+    "footer footer footer";
+}
+
+.grid-container div {
+  background-color: rgb(0, 0, 0);
+
+  padding: 1rem;
+}
+
+.header {
+  grid-area: header;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.aside {
+  grid-area: aside;
+  width: 1fr;
+  border-style: outset;
+  border-top: solid 0.3rem rgb(146, 22, 22);
+  border-right: solid 0.3rem rgb(116, 56, 71);
+  border-bottom: solid 0.3rem rgb(44, 62, 112);
+  border-left: solid 0.3rem red;
+  border-radius: 2rem;
+  transition: all 1s ease;
+  display: flex;
+  grid-row: auto;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.aside:hover {
+  cursor: pointer;
+  color: black;
+  background: rgb(111, 112, 28);
+}
+
+.home-picture {
+  grid-area: home-picture;
+}
+
+.footer {
+  grid-column: footer;
+}
+
+.homepic {
+  border-radius: 4rem;
+  display: flex;
+  width: 55rem;
+}
+
+#menu {
+  color: #fafafa;
+  list-style-type: none;
+  display: inline-flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  border: solid 0.5rem white;
+  text-align: center;
+  align-items: center;
+  transition: all 1s ease;
+  border-radius: 2rem;
+  gap: 0.5rem;
+}
+
+#menu:hover {
+  cursor: pointer;
+  color: black;
+  background: rgb(214, 60, 60);
+}
+
+.menu:hover {
+  color: #1784eb;
+  text-decoration: blueviolet;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+/* BIOGRAPHY */
+
+.h1all {
+  color: rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  background-color: rgb(116, 56, 71);
+  width: 20rem;
+  height: 3rem;
+}
+
+.biotext {
+  display: flex;
+  color: #fafafa;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 1.4;
+
+  text-align: center;
+  border: solid 0.1rem white;
+  transition: all 1s ease;
+  border-radius: 1rem;
+  gap: 1rem;
+}
+
+.biotext:hover {
+  color: black;
+  background: rgb(214, 60, 60);
+}
+
+.biotext:hover {
+  color: #ffffff;
+  text-decoration: rgb(255, 255, 255);
+}
+
+h2 {
+  color: #f2f534;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.biopic {
+  width: 20rem;
+  border-radius: 2rem;
+}
+
+/* VIDEO */
+
+.container-video {
+  display: flex;
+  flex-direction: column;
+}
+
+.video {
+  order: 1;
+}
+
+.video-text {
+  display: flex;
+  color: #fafafa;
+  font-family: "Open Sans Condensed", sans-serif;
+  line-height: 1.4;
+  text-align: center;
+}
+
+/* STORE */
+
+.grid-store-container {
+  background-color: black;
+}
+
+.grid-store-container div {
+  padding: 1rem;
+}
+
+.titulo2 {
+  display: table;
+  border-style: dotted;
+  border-top: double 0.3rem rgb(146, 22, 22);
+  border-right: double 0.3rem rgb(116, 56, 71);
+  border-bottom: double 0.3rem rgb(44, 62, 112);
+  border-left: double 0.3rem red;
+}
+
+.container-store {
+  grid-area: container-store;
+  max-width: 40rem;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  background-color: black;
+}
+
+.contenedor__cards {
+  margin: 5rem 0;
+}
+
+.card {
+  background-image: url(../imagenes/paisaje1.jpg);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.card__thumbnail {
+  margin-right: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: inline-block;
+  width: 300px;
+}
+
+.card__img {
+  display: flex;
+  width: 100%;
+}
+
+.card__titulo {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 2rem;
+}
+
+.card__extracto {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  line-height: 1rem;
+  color: #000000;
+  margin-bottom: 1rem;
+  margin-left: 2rem;
+}
+
+.boton {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border: none;
+  min-width: 7rem;
+  height: 3rem;
+  padding: 0 1rem;
+  color: #fff;
+  display: inline-block;
+  border-radius: 80rem;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e46277;
+  transition: 1s ease all;
+}
+
+.boton__texto {
+  font-weight: 600;
+}
+
+.boton:hover {
+  background: #1784eb;
+  text-decoration: none;
+}
+
+.boton--absolute {
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+}
+
+h3 {
+  color: #fff;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.table {
+  grid-area: table;
+  display: flex;
+  color: #de1616;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  grid-row: auto;
+  justify-content: center;
+}
+
+/* SIGN UP */
+
+h4 {
+  color: chocolate;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+}
+
+label {
+  color: rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  background-color: black;
+}
+
+h5 {
+  color: chocolate;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+}
+
+.FormTitle {
+  color: #fafafa;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+
+.ta {
+  color: #444343;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 200px;
+}
+
+#formdad {
+  display: grid;
+  flex-direction: row;
+}
+
+#formulario {
+  display: flex;
+}
+
+/* FOOTER */
+
+.footer {
+  color: rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.5rem;
+  background-color: rgb(134, 131, 132);
+  display: flex;
+  justify-content: center;
+}
+
+.notice {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+
+.text {
+  text-align: justify;
+  line-height: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1rem;
+  border: 0.1rem solid white;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  background-color: rgb(211, 55, 94);
+  width: 20rem;
+  height: 3rem;
+}
+
+.h1home {
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  background: url(../imagenes/dido_logo.png);
+  background-size: 240px 60px;
+}
+
+.logo {
+  display: flex;
+}
